@@ -1,0 +1,58 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#12297d">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:text="Proxi"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:textColor="#cccccc"
+        android:textSize="100sp" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/title"
+        android:layout_marginBottom="-30dp"
+        android:fontFamily="serif-monospace"
+        android:text="&quot;A very peculiar assistant&quot;"
+        android:layout_centerInParent="true"
+        android:textColor="#cccccc"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/subtitle"
+        android:layout_marginStart="100sp"
+        android:layout_marginTop="100sp"
+        android:layout_marginEnd="100sp"
+        android:layout_marginBottom="-147dp"
+        android:fontFamily="serif-monospace"
+        android:onClick="displayImage"
+        android:padding="25sp"
+        android:text="Click here to begin!"
+        android:layout_centerInParent="true"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="match_parent"
+        android:layout_height="212dp"
+        android:layout_alignBottom="@id/button1"
+        android:layout_marginBottom="-261dp"
+        android:src="@drawable/proxiexample"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
